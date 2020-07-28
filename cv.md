@@ -3,7 +3,7 @@ layout: cv
 header: interchange.jpg
 color: 3
 permalink: /cv/
-title: null
+title: none
 ---
 
 ## Bio
