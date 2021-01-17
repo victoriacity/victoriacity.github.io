@@ -1,6 +1,7 @@
 ---
 layout: page
 pagetitle: Portfolio
+title: none
 permalink: /portfolio/
 header: interchange2.jpg
 color: 1

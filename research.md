@@ -1,6 +1,7 @@
 ---
 layout: page
 pagetitle: Research
+title: none
 permalink: /research/
 header: cover.jpg
 ---

@@ -1,6 +1,7 @@
 ---
 layout: page
 pagetitle: Projects
+title: none
 permalink: /projects/
 color: 0
 header: mpm.jpg
