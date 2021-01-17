@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title != "none" %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title != "none" %}{{ page.title | }} {% endif %}{{ site.name }} | {{ site.description }}</title>
 
     {% include meta.html %}
 
@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     
   </head>
@@ -28,9 +31,12 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <a href="{{ site.baseurl }}/" class="ml-auto btn btn-light btn-sm">Blog</a>
+              <a href="{{ site.baseurl }}/" class="btn btn-light btn-sm">About</a>
+              <a href="{{ site.baseurl }}/projects" class="btn btn-light btn-sm">Projects</a>
+              <a href="{{ site.baseurl }}/research" class="btn btn-light btn-sm">Research</a>
+              <a href="{{ site.baseurl }}/portfolio" class="btn btn-light btn-sm">Portfolio</a>
+              <a href="{{ site.baseurl }}/articles" class="ml-auto btn btn-light btn-sm">Blog</a>
               <a href="https://github.com/{{ site.footer-links.github }}" class="btn btn-light btn-sm">Github</a>
-              <a href="{{ site.baseurl }}/cv" class="btn btn-light btn-sm">About</a>
             </div>
         </nav>
 
@@ -40,6 +46,11 @@
         <h1>{{ page.title }}</h1>
       </div>
       {% endif %}
+      {% if page.pagetitle != "none" %}
+      <div class="container page-title">
+        <h1>{{ page.pagetitle }}</h1>
+      </div>
+      {% endif %}
       {% if page.abstract %}
       <div class="container post-abstract">
         <p>{{ page.abstract }}</p>
@@ -47,14 +58,12 @@
       {% endif %}
       
     </div>
-    <div id="main" role="main" class="container cardcontainer">
-      {{ content }}
-    </div>
+    {{ content }}
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
-          <p>© 2020 Andrew Sun, powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+          <p>© 2021 Yangzesheng Sun, powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
         </footer>
       </div>
     </div>

@@ -1,0 +1,30 @@
+---
+layout: default
+header: blog1.jpg
+headerclass: indexheader
+title: victoriacity.github.io
+abstract: Simulation, machine learning, computer graphics, visual design
+color: -1
+---
+<div id="main" role="main" class="container cardcontainer">
+  <div class="posts">
+    {% for post in site.posts %}
+      <div class="bg" style="background-image: linear-gradient(
+        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.8)
+      ),url(/images/{{post.header}});">
+        <article class="post">
+          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </article>
+      </div>
+    {% endfor %}
+  </div>
+
+  <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+</div>

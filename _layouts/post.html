@@ -1,20 +1,21 @@
 ---
 layout: default
 ---
+<div id="main" role="main" class="container cardcontainer">
+  <div class="cardtop"></div>
+  <article class="post">
 
-<div class="cardtop"></div>
-<article class="post">
+    <div class="entry">
+      {{ content }}
+    </div>
 
-  <div class="entry">
-    {{ content }}
-  </div>
+    <div class="date">
+      Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+    {% include disqus.html %}
+  </article>
+</div>
 
 <script type="text/javascript" async
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">

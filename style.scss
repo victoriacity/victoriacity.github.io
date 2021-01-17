@@ -22,11 +22,12 @@ body {
 	background: $white;
   font: 16px $sans;
   color: $darkGray;
+  text-align: justify;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1024px;
   padding: 0 10px;
   width: 100%;
 }
@@ -201,6 +202,26 @@ img {
   }
 }
 
+.page-title {
+  margin-top: 7.5em;
+  h1 {
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 2px 0;
+    font-family: Quicksand;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    width: fit-content;
+    margin: auto;
+    padding: 0.2em 2em;
+    font-size: 3em;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(128, 128, 128, 0.8);
+    line-height: 1.1em;
+  }
+}
+
 .post-title {
   margin-top: 7.5em;
   h1 {
@@ -362,7 +383,6 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
@@ -398,9 +418,154 @@ footer {
 }
 
 .profilecard {
-  margin-top: -15em;
+  margin-top: -8em;
   box-shadow: 0 0 20px 2px rgba(200, 200, 200, 0.3);
   border-width: 0;
+  max-width: 1024x !important;
+  background-image: url("images/profile_jumbo.jpg");
+  background-size: cover;
+  background-position: left;
+  padding-bottom: 0.5em;
+  z-index: 100;
+  //height: 50%;
+}
+
+.profilebody {
+  margin-left: 42%;
+}
+
+.profile-title {
+  padding-top: 1em;
+  color:white;
+  font-weight: 600;
+
+}
+
+.profile-text {
+  //font-size: 6px;
+  color: #fff;
+  line-height: 1.1em;
+  small {
+    color: #b7c0eb;
+    font-weight: 300;
+    font-size: 0.8em;
+  }
+  a {
+    color: #fff;
+  }
+
+}
+
+.profile-background {
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+  margin-top: -3.2em;
+  background: linear-gradient(165deg, #ecf4ff, #dbe4ee);
+}
+
+.profile-background2 {
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+  margin-top: 0;
+  background: linear-gradient(165deg, #fffce8, #f6f0d3);
+}
+
+.profile-background3 {
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+  margin-top: 0;
+  background: linear-gradient(165deg, #fff, #eee);
+}
+
+
+.post {
+  p {
+    font-family: Quicksand, sans-serif;
+  }
+}
+
+.page {
+  p, li {
+    line-height: 2em;
+  }
+  h1 {
+    width: fit-content;
+    margin-right: auto;
+    width: 5.5em;
+    line-height: 1.5em;
+    font-family: Quicksand, sans-serif;
+    font-size: 2.6em;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    font-weight: 300;
+    color: #e75;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-size: 1.6em;
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+  }
+}
+
+.profile-sec1 {
+  a {
+    color: #e75;
+  }
+  
+  b {
+    font-weight: 600;
+  }
+
+  .box {
+    padding: 0.5em 1.5em;
+    background-color: #f6f2d9;
+    border-color: #933;
+    border-width: 2px;
+    border-style: solid;
+    font-style: italic;
+    color: #933;
+  }
+}
+
+.profile-sec2 {
+  a {
+    color: #e75;
+  }
+  p {
+    color: #933;
+    text-align: left;
+  }
+  padding-left: 0;
+  padding-right: 2em;
+  
+}
+
+.profile-sec3 {
+  h4 {
+    color: #35c;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Quicksand, sans-serif;
+  }
+  h1 {
+    color: #35c;
+  }
+  a {
+    color: #35c;
+    font-weight: 600;
+  }
+  li {
+    margin-bottom: 0.7em;
+  }
+  b {
+    font-weight: 600;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

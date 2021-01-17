@@ -1,29 +1,115 @@
 ---
 layout: default
-header: blog1.jpg
-headerclass: indexheader
-title: victoriacity.github.io
-abstract: Simulation, machine learning, computer graphics, visual design
-color: -1
+header: interchange.jpg
+color: 3
+pagetitle: About me
 ---
-
-<div class="posts">
-  {% for post in site.posts %}
-    <div class="bg" style="background-image: linear-gradient(
-      rgba(255, 255, 255, 0.7), 
-      rgba(255, 255, 255, 0.8)
-    ),url(/images/{{post.header}});">
-      <article class="post">
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-        <div class="entry">
-          {{ post.excerpt }}
-        </div>
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      </article>
+<div class="profile-background">
+  <div class="container profilecard">
+    <div class="profilebody">
+      <h1 class="profile-title">Yangzesheng (Andrew) Sun</h5>
+      <p class="profile-text">Ph. D. Student</p>
+      <p class="profile-text">
+          <small>Department of Chemistry & <br> 
+              Department of Computer Science and Engineering, <br> 
+              University of Minnesota
+          </small></p>
+      <p class="profile-text">
+          Contact: sun00032 [at] umn [dot] edu
+      </p>
+      <p class="profile-text">
+            <i class="inline-icon svg-icon github"></i>
+            <a href="https://github.com/{{ site.footer-links.github }}">Github</a>
+            &nbsp;&nbsp;
+            <i class="inline-icon svg-icon linkedin"></i>
+            <a href="https://www.linkedin.com/in/andrewsun74/">Linkedin</a>
+            &nbsp;&nbsp;
+            <i class="inline-icon svg-icon twitter"></i>
+            <a href="https://www.twitter.com/{{ site.footer-links.twitter }}">Twitter</a>
+            &nbsp;&nbsp;
+            <i class="inline-icon svg-icon youtube"></i>
+            <a href="https://youtube.com/{{ site.footer-links.youtube }}">Youtube</a>
+            &nbsp;&nbsp;
+            <a href="/assets/Yangzesheng_Sun_CV_Dec2020.pdf">[CV]</a>
+      </p>
     </div>
-  {% endfor %}
+  </div>
+
+  <div class="container cardcontainer" >
+    <div class="page profile-sec1" id="bio">
+      <h1>Bio</h1>
+      <p>
+      I am a <b>PhD student in Computational Chemistry and MSc student in Computer Science</b> at University of Minnesota Twin Cities, advised by <a href=http://siepmann.chem.umn.edu>J. Ilja Siepmann</a>. My research interests include <b>physics-informed machine learning, physically-based simulations, and high-performance computing</b>. My PhD research is supported by the <a href=http://www1.chem.umn.edu/nmgc/index.html>Nanoporous Materials Genome Center</a>. I received Bachelor's degree in Chemistry with Honors from Wuhan University in 2017.
+      </p>
+      <p>Apart from my PhD research I am also interested in <b>computer graphics, game development, and graphics design</b>. I am an active <a href=https://en.wikipedia.org/wiki/Mod_(video_games)>game modding</a> developer for <em>Cities: Skylines</em>, one of the most popular city-building games in the past decade. My primary modding project, <a href=https://github.com/citiesskylines-csur/CSUR>Cities: Skylines Urban Road (CSUR)</a>, has more than 35,000 users (cumulative) on the <a href=https://steamcommunity.com/id/VictoriaCity/myworkshopfiles/>Steam Workshop</a>.</p>
+      <div class=box>
+        <p>I am looking for <b>Fall 2021 internship positions in machine learning, computer graphics, or physical simulations</b>. I would greatly appreciate it if you can contact me about related opportunities.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<div class="profile-background2">
+  <div class="page row container">
+    <div class="col-lg-4 col-sm-6 profile-sec2">
+      <h1>Research</h1>
+      <p><b><a href=/research>Click here</a> to learn about my PhD research.</b></p>
+    </div>
+    <div class="col-lg-4 col-sm-6 profile-sec2">
+      <h1>Projects</h1>
+      <p><b><a href=/projects>Click here</a> to view my software projects.</b></p>
+    </div>
+    <div class="col-lg-4 col-sm-6 profile-sec2">
+      <h1>Portfolio</h1>
+      <p><b><a href=/portfolio>Click here</a> to view my design, illustration, and modeling works.</b></p>
+    </div>
+  </div>
+
+</div>
+
+<div class="profile-background3">
+  <div class="container cardcontainer" id="publications">
+    <div class="page profile-sec3">
+      <h1>Publications</h1>
+      <h4>Peer-reviewed conferences (proceedings & workshops)</h4>
+      <ul>
+        <li>
+          <b>Sun, Y.-Z.-S.</b>; Josephson, T. R.; Siepmann, J. I. Interpretable Learning of Complex Multicomponent Adsorption Equilibria from Self-attention, NeurIPS 2020 Machine Learning for Molecules Workshop, 2020.
+          <a href=https://ml4molecules.github.io/papers2020/ML4Molecules_2020_paper_18.pdf>[Paper]</a>
+          <a href=/assets/poster_ML4Molecules_2020_18.png>[Poster]</a>
+        </li>
+        <li>
+          <b>Sun, Y.-Z.-S.</b>; DeJaco, R. F.; Siepmann, J. I. Predicting hydrogen storage in nanoporous materials using meta-learning, NeurIPS 2019 Machine Learning and the Physical Sciences Workshop, Vancouver, Canada, 2019.
+          <a href=https://ml4physicalsciences.github.io/2019/files/NeurIPS_ML4PS_2019_47.pdf>[Paper]</a>
+          <a href=/assets/poster_ML4PS_2019_47.pdf>[Poster]</a>
+        </li>
+      </ul>
+      <h4>Scientific journals</h4>
+      <ul>
+        <li>
+          <b>Sun, Y.-Z.-S.</b>; DeJaco, R. F.; Li, Z.; Tang, D.; Glante, S.; Sholl, D. S.; Colina, C. M.; Snurr, R. Q.; Thommes, M.; Hartmann, M.; Siepmann, J. I. Fingerprinting nanoporous materials for hydrogen storage using meta-learning, <em>Science Advances</em>, under review.
+        </li>
+        <li>
+          Rahbari, A.; Josephson, T. R.; <b>Sun, Y.-Z.-S.</b>; Moultos, O.A.; Dubbeldam, D.; Siepmann, J. I.; Vlugt, T. J. H. Multiple linear regression and thermodynamic ﬂuctuations are equivalent for computing thermodynamic derivatives from molecular simulation, <em>Fluid Phase Equilibria</em> <b>2020</b>, 112785. 
+          <a href=https://doi.org/10.1016/j.fluid.2020.112785>[Paper]</a>
+        </li>
+        <li>
+          Eggimann, B. L.; <b>Sun, Y.-Z.-S.</b>; DeJaco, R. F.; Singh, R.; Ahsan, M.; Josephson, T. R.; Siepmann, J. I. Assessing the quality of molecular simulations for vapor&ndash;liquid equilibria: an analysis of the TraPPE database, <em>Journal of Chemical & Engineering Data</em> <b>2020</b>, 65, 1330&ndash;1344.
+          <a href=https://doi.org/10.1021/acs.jced.9b00756>[Paper]</a>
+        </li>
+        <li>
+          <b>Sun, Y.-Z.-S.</b>; DeJaco, R. F; Siepmann, J. I. Deep neural network learning of complex binary sorption equilibria from molecular simulation data, <em>Chemical Science</em> <b>2019</b>, 10, 4377&ndash;4388.
+          <a href=https://doi.org/10.1039/C8SC05340E>[Paper]</a>&nbsp;<a href=https://pubs.rsc.org/en/content/articlepdf/2019/sc/c9sc90089f>[Journal Front Cover]</a>
+        </li>
+        <li>
+          Peng, S.; Bie, B.; <b>Sun, Y.-Z.-S.</b>; Liu, M.; Cong, H.; Zhou, W.; Xia, Y.; Tang, H.; Deng, H.; Zhou, X. Metal-organic frameworks for precise inclusion of single-stranded DNA and transfection in immune cells, <em>Nature Communications</em> <b>2018</b>, 9, 1293.
+        </li>
+        <li>
+          Dong, Z.; <b>Sun, Y.-Z.-S.</b>; Chu, J.; Zhang, X.; Deng, H. Multivariate metal-organic frameworks for dialing-in the binding and programming the release of drug molecules, <em>Journal of the American Chemical Society</em> <b>2017</b>, 139, 14209&ndash;14216.
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+
