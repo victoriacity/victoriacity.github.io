@@ -18,7 +18,7 @@ I design visual identification elements, including logos, for my personal projec
 
 
 ## Video channels
-I am collaborating with [Paradox Interactive](https://www.paradoxplaza.com/about-us-static-info-ca.html) on *Cities: Skylines* tutorial videos. I also provided the [Chinese translation for the City Builders](https://www.bilibili.com/video/BV1HJ411P7bb) mini documentaries. My long-term goal on video creation is to make a channel about urban planning with a focus of road networks.
+I am collaborating* with [Paradox Interactive](https://www.paradoxplaza.com/about-us-static-info-ca.html) on *Cities: Skylines* tutorial videos. I also provided the [Chinese translation for the City Builders](https://www.bilibili.com/video/BV1HJ411P7bb) mini documentaries. I am also starting a BiliBili video series on popolar science in computer graphics.
 
 My videos are published on these channels:
 * [My personal YouTube channel (English)](https://www.youtube.com/c/victoriacity74)
@@ -27,6 +27,8 @@ My videos are published on these channels:
 * [Cities: Skylines official BiliBili channel (Chinese)](https://space.bilibili.com/390890336/)
 
 ![05](/portfolio/05.jpg)
+
+**Disclaimer: Collaboration between Cities: Skylines creators with Paradox Interactive does not involve any employment relationship. The collaboration is manifested by allowing for early access to beta game content and publishing non-commercial purpose Cities: Skylines videos on the game's official channels.* 
 
 ## Posters
 I treat my posters presented at academic conferences as works of graphics design as well. Compared with figures in research articles, poster needs to be more visually efficient in the use of graphical schemes and illustrations because of the dense environment of poster sessions, both in-person and virtual.
